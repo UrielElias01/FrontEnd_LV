@@ -1,21 +1,20 @@
 *,
 *:before,
-*:after{
+*:after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+.fondo { 
     background-color: #311875;
 }
-.background{
+.background {
     width: 430px;
     height: 520px;
     position: absolute;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
-    color: #311875;
 }
 .background .shape {
     height: 250px;
@@ -23,54 +22,54 @@ body{
     position: absolute;
     border-radius: 50%;
 }
-.shape:first-child{
+.shape:first-child {
     background: linear-gradient(#362636, #f623ba);
     left: -95px;
     top: -120px;
 }
-.shape:last-child{
+.shape:last-child {
     background: linear-gradient(to right, #ff2fb6, #f09819);
     right: -90px;
     bottom: -130px;
 }
-form{
+form {
     height: 650px;
     width: 400px;
-    background-color: rgba(255,255,255,0.13);
+    background-color: #311875;/**rgba(255, 255, 255, 0.13);*/
     position: absolute;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     border-radius: 10px;
     backdrop-filter: blur(10px);
-    border: 2px solid rgba(255, 255, 255,0.1);
-    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
     padding: 50px 35px;
 }
-form *{
+form * {
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
     letter-spacing: 0.2px;
     outline: none;
     border: none;
 }
-form h3{
+form h3 {
     font-size: 35px;
     font-weight: 500;
     line-height: 42px;
     text-align: center;
 }
-label{
+label {
     display: block;
     margin-top: 10px;
     font-size: 16px;
     font-weight: 500;
 }
-input{
+input {
     display: block;
     height: 50px;
     width: 100%;
-    background-color: rgba(255, 255, 255,0.07);
+    background-color: rgba(255, 255, 255, 0.07);
     border-radius: 3px;
     padding: 0 10px;
     margin-top: 8px;
@@ -80,7 +79,7 @@ input{
 ::placeholder {
     color: #e5e5e5;
 }
-button{
+button {
     margin-top: 30px;
     width: 100%;
     background-color: #ffffff;
@@ -91,11 +90,11 @@ button{
     border-radius: 5px;
     cursor: pointer;
 }
-.login{
+.login {
     margin-top: 10px;
     display: flex;
 }
-.politics{
+.politics {
     margin-top: 10px;
     display: flex;
     align-items: center;
