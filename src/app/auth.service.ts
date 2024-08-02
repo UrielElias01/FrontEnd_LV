@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 //1. Patron Service
+
 @Injectable({
 //Este decorador indica que esta clase puede ser inyectada en otras partes de la aplicación.
   providedIn: 'root'
@@ -12,7 +13,7 @@ export class AuthService {
   //localmente:
   //private baseUrl= 'http://localhost:3000';
   //servidor aws:
-  private baseUrl='https://172.31.40.130';
+  private baseUrl='https://lasvoces.ddns.net';
 
   constructor(private http: HttpClient) { }
   //Angular proporciona el HttpClient para realizar solicitudes HTTP.
