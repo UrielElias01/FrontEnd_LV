@@ -9,8 +9,8 @@ body{
     background-color: #311875;
 }
 .background{
-    width: 500px;
-    height: 620px;
+    width: 430px;
+    height: 520px;
     position: absolute;
     transform: translate(-50%,-50%);
     left: 50%;
@@ -24,16 +24,16 @@ body{
 }
 .shape:first-child{
     background: linear-gradient(#362636, #f623ba);
-    left: -80px;
-    top: -80px;
+    left: -95px;
+    top: -120px;
 }
 .shape:last-child{
     background: linear-gradient(to right, #ff2fb6, #f09819);
-    right: -30px;
-    bottom: -80px;
+    right: -90px;
+    bottom: -130px;
 }
 form{
-    height: 750px;
+    height: 650px;
     width: 400px;
     background-color: rgba(255,255,255,0.13);
     position: absolute;
@@ -61,7 +61,7 @@ form h3{
 }
 label{
     display: block;
-    margin-top: 30px;
+    margin-top: 10px;
     font-size: 16px;
     font-weight: 500;
 }

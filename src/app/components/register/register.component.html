@@ -13,20 +13,20 @@
             <div class="shape"></div>
             <div class="shape"></div>
         </div>
-        <form>
+        <form (ngSubmit)="onSubmit()">
             <h3>Crea una Cuenta</h3>
             <label for="name">Nombre</label>
-            <input placeholder="Nombre" id="name">
+            <input placeholder="Nombre" id="name" [(ngModel)]="name" name="name">
             <label for="correo">Correo Electrónico</label>
-            <input placeholder="Correo Electrónico" id="email1">
+            <input placeholder="Correo Electrónico" id="email1" [(ngModel)]="email" name="email">
             <label for="contra">Contraseña</label>
-            <input placeholder="Contraseña" id="password1">
+            <input placeholder="Contraseña" id="password1" [(ngModel)]="password" name="password" type="password">
             <label for="reppass">Repite la Contraseña</label>
-            <input placeholder="Contraseña" id="repassword">
+            <input placeholder="Contraseña" id="repassword" [(ngModel)]="repassword" name="repassword" type="password">
             
-            <button style="color:black">Registrarte</button>
+            <button style="color:black" type="submit">Registrarte</button>
             <div class="login">
-                <p>¿Ya tienes una Cuenta? <a href="login">Inicia Sesión</a></p>
+                <p>¿Ya tienes una Cuenta? <a routerLink="/login">Inicia Sesión</a></p>
             </div>
             <div class="politics">
                 <p><a href="https://www.privacypolicies.com/live/17d624e5-5fbf-4cde-a4b7-48583dd47d05">Políticas de Privacidad</a></p>
