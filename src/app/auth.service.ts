@@ -6,7 +6,11 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AuthService {
-  private baseUrl= 'http://localhost:3000';
+  //Cambia en el servidor y local 
+  //localmente:
+  //private baseUrl= 'http://localhost:3000';
+  //servidor aws:
+  private baseUrl='https://52.91.44.152';
 
   constructor(private http: HttpClient) { }
 

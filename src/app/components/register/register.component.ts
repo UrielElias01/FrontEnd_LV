@@ -27,8 +27,10 @@ export class RegisterComponent {
       password: this.password,
       role: this.role
     };
-
-    this.http.post('http://localhost:3000/usuario/', user).subscribe(
+    //localmente:
+    //this.http.post('http://localhost:3000/usuario/', user).subscribe(
+    //en el servidor:
+    this.http.post('https://52.91.44.152/usuario/',user).subscribe(
       response => {
         console.log('Registro exitoso', response);
         this.router.navigate(['/login']);
