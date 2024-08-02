@@ -15,6 +15,9 @@
         <div class="shape"></div>
     </div>
     <form (ngSubmit)="onSubmit()">
+        <!-- Dentro de onSubmit, se llama al método login del AuthService,
+        que envía una solicitud HTTP POST al backend con el correo electrónico
+        y la contraseña.-->
         <h3>Inicio</h3>
         <label for="email">Correo Electrónico</label>
         <input type="text" placeholder="Correo electrónico" id="email" [(ngModel)]="email" name="email">

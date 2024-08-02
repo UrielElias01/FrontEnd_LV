@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
-  styleUrl: './register.component.css'
+  styleUrls: ['./register.component.css']
 })
 export class RegisterComponent {
   name: string = '';
@@ -30,7 +30,7 @@ export class RegisterComponent {
     //localmente:
     //this.http.post('http://localhost:3000/usuario/', user).subscribe(
     //en el servidor:
-    this.http.post('https://52.91.44.152/usuario/',user).subscribe(
+    this.http.post('https://172.31.40.130/usuario/',user).subscribe(
       response => {
         console.log('Registro exitoso', response);
         this.router.navigate(['/login']);
