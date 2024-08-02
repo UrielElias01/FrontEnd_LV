@@ -1,0 +1,149 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #311875; /* Color morado */
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.navbar-right a {
+    color: white;
+    margin-left: 15px;
+    font-size: 1.2em;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f9;
+    overflow-y: auto;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card .post-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.comments {
+    margin-top: 20px;
+}
+
+.comments h4 {
+    margin-bottom: 10px;
+}
+
+.comment-bar {
+    display: flex;
+    padding: 10px 20px;
+    background-color: #6a0dad; /* Otra tonalidad de morado */
+    align-items: center;
+}
+
+.comment-bar input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.comment-bar button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #311875; /* Mismo color que la barra de navegación */
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-size: 0.9em;
+    flex-wrap: wrap;
+}
+
+.footer-left, .footer-right {
+    flex: 1;
+}
+
+.footer-left p, .footer-right p {
+    margin: 5px 0;
+}
+
+.footer-right a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-right {
+        margin-top: 10px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .comment-bar {
+        flex-direction: column;
+    }
+
+    .comment-bar input {
+        margin-bottom: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-left, .footer-right {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
