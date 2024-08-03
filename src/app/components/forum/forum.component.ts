@@ -27,7 +27,7 @@ export class ForumComponent implements OnInit, OnDestroy {
       });
   }
   
-  
+   
 
   ngOnDestroy(): void {
     if (this.notificationSubscription) {
