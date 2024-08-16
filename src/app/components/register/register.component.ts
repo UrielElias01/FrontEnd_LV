@@ -37,10 +37,10 @@ export class RegisterComponent {
       role: this.role
     };
     //localmente:
-    //this.http.post('http://localhost:3000/usuario/', user).subscribe(
+    this.http.post('http://localhost:3000/usuario/', user).subscribe(
     //en el servidor:
     //Envio de la solicitud HTTP POST al backend
-    this.http.post('https://52.203.37.191/usuario/',user).subscribe(
+    // this.http.post('https://52.203.37.191/usuario/',user).subscribe(
       response => {
         //manejo de la respuesta del backend
         console.log('Registro exitoso', response);
